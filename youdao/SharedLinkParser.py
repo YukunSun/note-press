@@ -7,7 +7,7 @@ import yaml
 
 
 # 根据 url 链接 获取id
-def get_note_id_by_url(url):
+def parse_note_id_by_shared_url(url):
     # 获取 id
     url_attr = urlparse(url)
     query_strings = url_attr.query
@@ -25,6 +25,6 @@ for note in notes:
     if url is None:
         continue
     # 获取 id
-    note_id = get_note_id_by_url(url)
+    note_id = parse_note_id_by_shared_url(url)
     print(note_id)
 
