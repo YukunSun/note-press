@@ -14,7 +14,7 @@
 ```yaml
 - url: https://note.youdao.com/ynoteshare1/index.html?id=fcea783dfde1b52ae026773b1b5fba05&type=note
   utime: # to judge the article if need to refresh
-  aid:  # which represent the Article's ID，冗余字段
+  aid:  # which represent the Article's ID，冗余
   title: # 标题，冗余字段
   ctime: # 创建时间，冗余字段
   publish: false # 预留，用于下架
@@ -34,7 +34,13 @@
 
 运行一遍命令：xxx ，即可
 
+
+
 - 下架文章
 
 todo,可以定义一个属性
 
+
+# node-press 的设计流程：
+
+https://www.processon.com/view/link/5deb4928e4b079080a235c68
