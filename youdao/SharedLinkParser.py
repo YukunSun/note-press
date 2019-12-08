@@ -81,7 +81,7 @@ for note in notes:
     note['ctime'] = ctime
     note['aid'] = aid(SupportedNote.YOUDAO_NOTE, url)
 
-    # todo refresh notes.yml and upload note
+    # update note
     text = note_detail.text
     print(text)
     """
@@ -99,4 +99,4 @@ for note in notes:
     """
 
 with open(notes_dir, "w") as f:
-    yaml.dump(notes, f, encoding='utf-8')
+    yaml.dump(notes, f)
